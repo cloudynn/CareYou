@@ -1,0 +1,789 @@
+/* Font */
+@font-face {
+  font-family: Jakobs-handwriting;
+  src: url(font/Jakobs_Handwriting_2.ttf);
+}
+@font-face {
+  font-family: Teen;
+  src: url(/font/teen.ttf);
+}
+@font-face {
+  font-family: TeenItalic;
+  src: url(/font/teen\ it.ttf);
+}
+@font-face {
+  font-family: TeenBold;
+  src: url(/font/teen\ bd.ttf);
+}
+@font-face {
+  font-family: Today-Easter;
+  src: url(font/Today-Easter.ttf);
+}
+@font-face {
+  font-family: CaviarDreams;
+  src: url(font/CaviarDreams.ttf);
+}
+/* End font */
+* {
+  margin: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.black {
+  color: black;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  height: 8%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  background-color: #f5f6fa8f;
+  z-index: 4;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.wrapper {
+  height: 100%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.logo a {
+  font-size: 80px;
+  font-family: Jakobs-handwriting;
+  color: black;
+  border-radius: 8px;
+  float: left;
+  position: relative;
+  animation-name: logo-move;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  transition: 1s;
+}
+
+.logo a:hover {
+  color: white;
+  transition-property: color;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+.menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  background-color: transparent;
+}
+
+li {
+  margin-right: 0px;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+li a {
+  background-color: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 4px;
+  font-size: 50px;
+  font-family: Jakobs-handwriting;
+  color: black;
+  font-weight: 400;
+  transition: 0.4s;
+}
+
+li a:hover {
+  background-color: rgba(0, 0, 0, 0.377);
+  color: white;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 4px;
+  font-size: 50px;
+  font-family: Jakobs-handwriting;
+  transition-property: background-color color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+}
+
+@keyframes logo-move {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 8px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+/* End Header */
+
+/* Body */
+.body {
+  width: 100%;
+  height: 100vh;
+}
+
+.cover {
+  position: fixed;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.432);
+}
+
+.wrapper-body {
+  height: 1000px;
+}
+
+.title-area {
+  height: 600px;
+  text-align: center;
+}
+
+h1 {
+  font-family: Jakobs-handwriting;
+  font-size: 80px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-top: 200px;
+}
+
+p {
+  font-family: Jakobs-handwriting;
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.content {
+  height: 500px;
+  background-color: #d1d8e0;
+}
+
+.content-text-area {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content-text-1 {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.text-content {
+  font-family: TodayEaster;
+  font-size: 35px;
+  color: black;
+}
+
+.content-text-2 {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
+
+.text-content-1 {
+  font-family: TodayEaster;
+  font-size: 35px;
+  color: black;
+}
+
+.content-2 {
+  width: 100%;
+  height: 300px;
+  background-color: #8f5c5c;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: teen;
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.text-content-2 {
+  font-family: teen;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.btn-contribute {
+  font-family: teen;
+  font-size: 20px;
+  color: aliceblue;
+  background-color: rgb(59, 19, 25);
+  padding: 20px;
+  border: black solid 2px;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.btn-contribute a {
+  color: #ffffff;
+}
+
+.btn-contribute:hover {
+  font-family: teen;
+  font-size: 20px;
+  background-color: rgb(150, 72, 72);
+  padding: 20px;
+  border: black solid 2px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  transition-property: background-color color;
+  transition-duration: 0.4s;
+}
+
+.content-3 {
+  width: 100%;
+  height: 400px;
+  background-color: #e4e4e4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-content-3 {
+  height: 30%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+span {
+  text-align: center;
+  width: 300px;
+}
+
+.wrapper-images-content-3 {
+  height: 70%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prev,
+.next {
+  font-size: 40px;
+  font-weight: 100;
+  color: #e4e4e4;
+  cursor: pointer;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.images-content-3 {
+  display: none;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-3-images {
+  width: 150px;
+  height: 150px;
+}
+
+.content-4 {
+  width: 100%;
+  height: 600px;
+  background-color: #ffffff;
+}
+
+.content-4-area-1 {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-4-title {
+  color: black;
+  font-family: TodayEaster;
+}
+
+.content-4-area-2 {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.prev2,
+.next2 {
+  font-size: 40px;
+  font-weight: 100;
+  color: #e4e4e4;
+  cursor: pointer;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+.content-4-text-area {
+  display: none;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-4-text-1 {
+  font-family: TodayEaster;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+.content-4-text-2 {
+  font-size: 40px;
+  color: rgb(75, 74, 74);
+}
+
+.content-5 {
+  width: 100%;
+  height: 550px;
+  background-color: #b49a95;
+}
+
+video {
+  height: 550px;
+  width: 100%;
+  object-fit: fill;
+  z-index: -1;
+}
+
+.text-btn-area {
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+  margin-left: 65%;
+  margin-top: 14%;
+}
+
+.text-content-5 {
+  font-size: 70px;
+}
+
+.btn-content-5 {
+  font-family: CaviarDreams;
+  font-size: 30px;
+  background-color: transparent;
+  padding: 20px;
+  border: orange solid 2px;
+  border-radius: 5px;
+  color: black;
+  transition: 1s;
+}
+
+.btn-content-5:hover {
+  font-family: CaviarDreams;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.438);
+  padding: 20px;
+  border: rgba(0, 0, 0, 0.438) solid 2px;
+  border-radius: 5px;
+  color: white;
+  transition-property: background-color color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+}
+
+.content-6 {
+  width: 100%;
+  height: 550px;
+  background-color: white;
+  background-image: url(img/People.png);
+  background-size: cover;
+}
+
+.wrapper-content-6 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.text-area-content-6 {
+  height: 80%;
+  width: 40%;
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: black solid 2px;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.178);
+}
+
+.content-6-text {
+  font-family: TodayEaster;
+  color: black;
+  font-size: 30px;
+}
+
+.content-7 {
+  width: 100%;
+  height: 865px;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+}
+
+.content-7-area-1 {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-content-7 {
+  font-family: CaviarDreams;
+  color: black;
+  font-size: 3em;
+}
+
+.content-7-area-2 {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-news {
+  height: 500px;
+  width: 350px;
+  margin-right: 25px;
+  margin-left: 25px;
+  border: grey solid 1px;
+}
+
+.img-news {
+  width: 100%;
+  height: 50%;
+  background-image: url(img/singapore.jpg);
+  background-size: cover;
+}
+
+.text-news {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-text-news {
+  height: 80%;
+  width: 90%;
+  text-align: left;
+}
+
+.type {
+  font-size: 18px;
+  font-family: CaviarDreams;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: black;
+}
+
+.news-title {
+  font-size: 28px;
+  font-family: CaviarDreams;
+  color: black;
+  margin-top: 10px;
+}
+
+.date-news {
+  font-size: 14px;
+  font-family: CaviarDreams;
+  font-weight: 100;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.kind {
+  font-size: 20px;
+  font-family: CaviarDreams;
+  color: black;
+  margin-top: 20px;
+}
+
+.content-7-area-3 {
+  height: 20%;
+  width: 100%;
+  background-color: white;
+}
+
+.content-8 {
+  width: 100%;
+  height: 625px;
+  background-color: white;
+}
+
+.content-8-title-area {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-8-title-wrapper {
+  text-align: center;
+}
+
+.content-8-title {
+  font-family: TodayEaster;
+  font-size: 50px;
+  color: black;
+}
+
+.content-8-subtitle {
+  font-family: TodayEaster;
+  font-size: 20px;
+  font-weight: 100;
+  color: black;
+}
+
+.content-8-text-area {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+
+.content-8-text-area-left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-8-text-area-right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-text-area {
+  font-family: TodayEaster;
+  font-size: 20px;
+  color: black;
+  margin-top: 20px;
+}
+
+input {
+  margin-top: 10px;
+  padding: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 400px;
+  border-radius: 5px;
+  font-family: TodayEaster;
+  font-size: 15px;
+}
+
+.button-bottom {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-bottom {
+  font-family: TodayEaster;
+  font-size: 25px;
+  color: black;
+  padding: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border: 2px solid darkgrey;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: 1s;
+}
+
+.btn-bottom:hover {
+  font-family: TodayEaster;
+  font-size: 25px;
+  color: white;
+  padding: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.438);
+}
+/* End Body */
+
+/* Footer */
+.wrapper-footer {
+  width: 100%;
+  height: 350px;
+  background-color: black;
+  display: flex;
+}
+
+.left-side {
+  width: 80%;
+  height: 100%;
+}
+
+.right-side {
+  width: 20%;
+  height: 100%;
+}
+
+.img-footer {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+.footer-right-text {
+  font-family: TodayEaster;
+  font-size: 20px;
+  margin-top: 2px;
+  padding: 5px;
+  border-left: 2px solid white;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+td a {
+  font-family: TodayEaster;
+  font-size: 20px;
+  color: white;
+}
+
+.upper {
+  width: 100%;
+  height: 60%;
+}
+
+.text-up-footer {
+  width: 100%;
+  height: 50%;
+  margin-left: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.title-upper-footer {
+  font-family: TodayEaster;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.input-and-button {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  top: 10px;
+}
+
+.input-footer {
+  width: 65%;
+}
+
+.button-send {
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.button-send a {
+  margin-top: 10px;
+  margin-left: 40px;
+  padding: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: TodayEaster;
+  font-size: 25px;
+  color: black;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.bottom {
+  width: 100%;
+  height: 40%;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 12px;
+}
+/* End Footer */
