@@ -23,6 +23,11 @@
   font-family: CaviarDreams;
   src: url(font/CaviarDreams.ttf);
 }
+
+@font-face {
+  font-family: Poppins;
+  src: url(font/Poppins-Regular.ttf);
+}
 /* End font */
 * {
   margin: 0;
@@ -60,7 +65,7 @@
 }
 
 .logo a {
-  font-size: 80px;
+  font-size: 60px;
   font-family: Jakobs-handwriting;
   color: black;
   border-radius: 8px;
@@ -106,13 +111,10 @@ li {
 
 li a {
   background-color: transparent;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 0 20px 0 20px;
   border-radius: 4px;
-  font-size: 50px;
-  font-family: Jakobs-handwriting;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
   color: black;
   font-weight: 400;
   transition: 0.4s;
@@ -121,13 +123,7 @@ li a {
 li a:hover {
   background-color: rgba(0, 0, 0, 0.377);
   color: white;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 20px;
-  padding-left: 20px;
-  border-radius: 4px;
-  font-size: 50px;
-  font-family: Jakobs-handwriting;
+  padding: 10px 20px 10px 20px;
   transition-property: background-color color;
   transition-duration: 0.4s;
   transition-timing-function: ease-in;
